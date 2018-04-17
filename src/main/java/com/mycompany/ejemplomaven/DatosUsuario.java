@@ -3,6 +3,7 @@ package com.mycompany.ejemplomaven;
 import javax.swing.JOptionPane;
 
 /**
+ * Clase con los Datos Privados de usuario
  *
  * @author Arturo
  */
@@ -42,18 +43,32 @@ public class DatosUsuario{
         DatosUsuario.descr=descr;
     }
 
-    public static void logging(){
+    /**
+     * Metodo que permite conectarse con tus credenciales de usuario y
+     * contraseña
+     */
+    public static void loging(){
         user=JOptionPane.showInputDialog("Introduce el nombre de usuario(Correo)");
         pass=JOptionPane.showInputDialog("Introduce la contraseña e usuario");
 
     }
 
+    /**
+     * Metodo para nombrar un nuevo repositorio
+     *
+     * @return Devuelve el nombre del repositorio
+     */
     public static String nombreRepo(){
         nombreRep=JOptionPane.showInputDialog("Nombre del repositorio deseado");
         return nombreRep;
 
     }
 
+    /**
+     * Metodo que permite añadir una descripcion al repositorio
+     *
+     * @return Devuelve la descripcion deseada
+     */
     public static String descripcion(){
         descr=JOptionPane.showInputDialog("Descripcion del repositorio");
         return descr;
