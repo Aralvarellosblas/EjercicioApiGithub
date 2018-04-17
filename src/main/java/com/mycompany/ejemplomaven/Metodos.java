@@ -62,7 +62,7 @@ public class Metodos{
     /**
      * Metodo que permite crear un repositorio suin tener que entrar en github
      */
-    public void crearRepositorio(){
+    public static void crearRepositorio(){
         try{
             DatosUsuario.loging();
             DatosUsuario.nombreRepo();
@@ -77,7 +77,7 @@ public class Metodos{
     /**
      * Metodo que permite clonar un repositorio
      */
-    public void clonarRepositorio(){
+    public static void clonarRepositorio(){
 
         try{
             Git.cloneRepository()
@@ -119,7 +119,7 @@ public class Metodos{
     /**
      * Metodo que inicializa un repositorio en la carpeta deseada
      */
-    public static void inicializarRepo(){
+    public static void inicializarRepositorio(){
         String ruta=rutaArchivo("Ruta de la carpeta para el repositorio");
         InitCommand repositorio=new InitCommand();
         try{
